@@ -3,6 +3,7 @@ async function buscaEndereco(cep) {
         var messageError = document.getElementById('erro');
         messageError.innerHTML = ""
 
+        
     try {
         var consultaCep = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
         var consultaCepConvertida = await consultaCep.json();
